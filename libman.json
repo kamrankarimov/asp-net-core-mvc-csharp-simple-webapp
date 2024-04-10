@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootstrap@5.3.3",
+      "destination": "wwwroot/bootstrap/"
+    },
+    {
+      "library": "bootstrap-jumbotron@1.0.0",
+      "destination": "wwwroot/bootstrap-jumbotron/"
+    },
+    {
+      "library": "popper.js@2.11.8",
+      "destination": "wwwroot/popper.js/"
+    },
+    {
+      "library": "jquery@3.7.1",
+      "destination": "wwwroot/jquery/"
+    }
+  ]
+}
