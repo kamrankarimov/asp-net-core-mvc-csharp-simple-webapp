@@ -1,0 +1,10 @@
+﻿@model List<Navbar>
+
+<ul class="navbar-nav mr-auto">
+    @foreach (var navbar in Model)
+    {
+        <li class="nav-item active">
+            <a class="nav-link" asp-controller="@navbar.ControllerName" asp-action="@navbar.ActionName">@navbar.Name</a>
+        </li>
+    }
+</ul>
