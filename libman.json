@@ -3,10 +3,6 @@
   "defaultProvider": "cdnjs",
   "libraries": [
     {
-      "library": "bootstrap@5.3.3",
-      "destination": "wwwroot/bootstrap/"
-    },
-    {
       "library": "bootstrap-jumbotron@1.0.0",
       "destination": "wwwroot/bootstrap-jumbotron/"
     },
@@ -17,6 +13,10 @@
     {
       "library": "jquery@3.7.1",
       "destination": "wwwroot/jquery/"
+    },
+    {
+      "library": "bootstrap@4.6.0",
+      "destination": "wwwroot/bootstrap/"
     }
   ]
 }
