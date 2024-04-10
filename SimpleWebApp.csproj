@@ -11,8 +11,4 @@
     <None Remove="Views\Shared\NewFolder1\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\" />
-  </ItemGroup>
-
 </Project>

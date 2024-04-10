@@ -21,7 +21,7 @@
 
     <partial name="~/Views/Shared/Partials/_HeaderNavbarPartial.cshtml" />
 
-    <main role="main" class="mt-5">
+    <main role="main" class="mt-5 @ViewData["MainClass"]">
         @RenderBody();
     </main>
 
