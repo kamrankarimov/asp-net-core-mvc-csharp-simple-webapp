@@ -32,6 +32,7 @@ namespace SimpleWebApp
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute("BlogRoute", "{controller=Home}/{action=Index}/{category?}/{id?}");
                 endpoints.MapDefaultControllerRoute();
             });
         }
