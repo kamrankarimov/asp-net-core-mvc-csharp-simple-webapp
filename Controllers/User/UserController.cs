@@ -35,6 +35,22 @@ namespace SimpleWebApp.Controllers.User
             return View();
         }
 
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Register(Users user)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(user);
+            }
+
+            return View();
+        }
+
 
     }
 }

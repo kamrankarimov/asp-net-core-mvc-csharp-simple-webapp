@@ -1,0 +1,54 @@
+﻿@model Users
+
+@section styles{
+    <link href="~/styles/signin.css" rel="stylesheet" />
+}
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container pt-5">
+    <form class="form-signin" asp-action="register" asp-controller="user" method="post">
+
+        <img class="mb-4" src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+
+        <label for="inputFirstName" class="sr-only">First Name</label>
+        <input type="text" id="inputFirstName" class="form-control" placeholder="First Name" asp-for="Name">
+        <span asp-validation-for="Name"></span>
+
+        <br />
+
+        <label for="inputLastName" class="sr-only">Last Name</label>
+        <input type="text" id="inputLastName" class="form-control" placeholder="Last Name" asp-for="LastName">
+        <span asp-validation-for="LastName"></span>
+
+        <br />
+
+        <label for="inputAddress" class="sr-only">Address</label>
+        <input type="text" id="inputAddress" class="form-control" placeholder="Address" asp-for="Address">
+        <span asp-validation-for="Address"></span>
+
+        <br />
+
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="text" id="inputEmail" class="form-control" placeholder="Email address" asp-for="Email">
+        <span asp-validation-for="Email"></span>
+        
+        <br />
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" asp-for="Password">
+        <span asp-validation-for="Password"></span>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+
+    </form>
+
+    @section scripts {
+        <script src="~/jquery-validate/jquery.validate.min.js"></script>
+        <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    }
+
+</div>
