@@ -1,4 +1,5 @@
-﻿
+﻿@model Users
+
 @section styles{
     <link href="~/styles/signin.css" rel="stylesheet" />
 }
@@ -15,17 +16,23 @@
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
 
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus> <br />
+        <input type="text" id="inputEmail" class="form-control" placeholder="Email address" asp-for="Email">
+        <span asp-validation-for="Email"></span>
+        
+        <br />
 
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
-        </div>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" asp-for="Password">
+        <span asp-validation-for="Password"></span>
 
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
 
     </form>
+
+    @section scripts {
+        <script src="~/jquery-validate/jquery.validate.min.js"></script>
+        <script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    }
+    
+
 </div>

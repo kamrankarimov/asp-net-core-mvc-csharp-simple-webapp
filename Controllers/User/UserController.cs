@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using SimpleWebApp.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Linq.Expressions;
 
 namespace SimpleWebApp.Controllers.User
 {
@@ -11,6 +13,17 @@ namespace SimpleWebApp.Controllers.User
 
         public IActionResult Login()
         {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Login(Users user)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(user);
+            }
+
             return View();
         }
 

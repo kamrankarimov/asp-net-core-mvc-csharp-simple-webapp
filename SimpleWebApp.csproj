@@ -11,4 +11,8 @@
     <None Remove="Views\Shared\NewFolder1\**" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+  </ItemGroup>
+
 </Project>
