@@ -7,10 +7,15 @@
     <meta name="description" content="Simple Web App">
     <meta name="author" content="Kamran Karimov">
 
+    @RenderSection("metatag", false)
+
     <title>Simple Web App</title>
 
     <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/bootstrap-jumbotron/bootstrap-jumbotron.min.css" rel="stylesheet" />
+
+    @RenderSection("styles", false)
+
 </head>
 
 <body>
@@ -57,5 +62,8 @@
     <script>window.jQuery || document.write('<script src="~/jquery/jquery.slim.min.js"><\/script>')</script>
     <script src="~/popper.js/esm/popper.min.js"></script>
     <script src="~/wwwroot/bootstrap/js/bootstrap.min.js"></script>
+
+    @RenderSection("scripts", false)
+
 </body>
 </html>
