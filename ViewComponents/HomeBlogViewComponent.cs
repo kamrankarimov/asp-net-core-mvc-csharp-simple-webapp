@@ -15,7 +15,7 @@ namespace SimpleWebApp.ViewComponents
                     Title = "Test Blog 1", 
                     Text = "Donec id elit non mi porta gravida at eget metus. Donec sed odio dui.",
                     Controller = "blog",
-                    Action = "ReadMore",
+                    Action = "readmore",
                     Category = "article"
                 },
 
@@ -24,7 +24,7 @@ namespace SimpleWebApp.ViewComponents
                     Title = "Test Blog 2",
                     Text = "Donec id elit non mi porta gravida at eget metus. Donec sed odio dui.",
                     Controller = "blog",
-                    Action = "ReadMore",
+                    Action = "readmore",
                     Category = "article"
                 },
 
@@ -33,7 +33,7 @@ namespace SimpleWebApp.ViewComponents
                     Title = "Test Blog 3",
                     Text = "Donec id elit non mi porta gravida at eget metus. Donec sed odio dui.",
                     Controller = "blog",
-                    Action = "ReadMore",
+                    Action = "readmore",
                     Category = "article"
                 }
             };

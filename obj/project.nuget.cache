@@ -1,13 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "CMBsKDE8HmIZZzAIX/JG+jqd0wZRVbLgs7mkZj8eQjEnsG87aUsuYHXEo4D7a4G6AgqwJ7/OsFYHGXvGe1pQTQ==",
+  "dgSpecHash": "MRJl7cdc3cgl/hnFAwPOoCejDeA40bJ87yUPqhoVoLjUoxqFppEFNh+ROgEjw+CbrcmDviALGZ/y+U1hmA0p0g==",
   "success": true,
   "projectFilePath": "C:\\Users\\kamra\\source\\repos\\SimpleWebApp\\SimpleWebApp\\SimpleWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kamra\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\kamra\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "C:\\Users\\kamra\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
-    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.17\\microsoft.aspnetcore.jsonpatch.5.0.17.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.17\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.17.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512"
   ],
   "logs": []
 }

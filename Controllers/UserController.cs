@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Linq.Expressions;
 using System.Collections.Generic;
 
-namespace SimpleWebApp.Controllers.User
+namespace SimpleWebApp.Controllers
 {
     public class UserController : Controller
     {
@@ -11,9 +11,9 @@ namespace SimpleWebApp.Controllers.User
         {
             var users = new List<Users>
             {
-                new Users { Name = "Kamran", LastName="Karimov", Email="kamran@example.ex"},
-                new Users { Name = "Samir", LastName="Agazadeh", Email="samir@example.ex"},
-                new Users { Name = "Elxan", LastName="Zeynalli", Email="elxan@example.ex"}
+                new Users { Id = 12, Name = "Kamran", LastName="Karimov", Email="kamran@example.ex"},
+                new Users { Id = 32, Name = "Samir", LastName="Agazadeh", Email="samir@example.ex"},
+                new Users { Id = 43, Name = "Elxan", LastName="Zeynalli", Email="elxan@example.ex"}
             };
 
             return View(users);

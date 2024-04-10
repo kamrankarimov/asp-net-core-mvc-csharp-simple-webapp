@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using SimpleWebApp.Models;
+using System;
 using System.Collections.Generic;
 
 namespace SimpleWebApp.Controllers
@@ -30,5 +32,19 @@ namespace SimpleWebApp.Controllers
 
             return View(userProduct);
         }
+
+        [HttpGet]
+        public string GetMoreProducts() {
+            var products = new List<Products>
+            {
+                new Products { Id = 1, Name="A Product", ThumbImg="https://dummyimage.com/130x100&text=example+product", Quantity = 1 },
+                new Products { Id = 2, Name="B Product", ThumbImg="https://dummyimage.com/130x100&text=example+product", Quantity = 3 },
+                new Products { Id = 3, Name="C Product", ThumbImg="https://dummyimage.com/130x100&text=example+product", Quantity = 5 }
+            };
+
+            return JsonConvert.SerializeObject(products);
+        }
     }
+
+    
 }

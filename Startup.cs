@@ -19,7 +19,8 @@ namespace SimpleWebApp
         {
             services
                 .AddControllersWithViews()
-                .AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining<Startup>());
+                .AddFluentValidation(x => x.RegisterValidatorsFromAssemblyContaining<Startup>())
+                .AddNewtonsoftJson();
 
         }
 

@@ -6,12 +6,13 @@
 
 <div class="container pt-5">
     <div class="text-center">
-        <h3>@Model.user.Name @Model.user.LastName (#@Model.user.Id) Products</h3>
+        <h3>@Model.user.Name @Model.user.LastName (#@Model.user.Id) Products</h3><br />
     </div>
-    <table class="table">
+    <table class="table" id="productTable">
         <thead>
             <tr>
                 <th scope="col">ID</th>
+                <th scope="col">Thumb</th>
                 <th scope="col">Product Name</th>
                 <th scope="col">Quantity</th>
             </tr>
@@ -20,12 +21,46 @@
             @foreach (var product in Model.products)
             {
                 <tr>
-                    <td><img src="@product.ThumbImg" /></td>
                     <td>@product.Id</td>
+                    <td><img src="@product.ThumbImg" /></td>
                     <td>@product.Name</td>
                     <td>@product.Quantity</td>
                 </tr>
             }
         </tbody>
     </table>
+
+
+    <div class="text-center">
+        <a id="getMoreProducts">Load More...</a>
+    </div>
+
+
+    @section scripts{
+
+        <script src="~/jquery/jquery.min.js"></script>
+
+        <script>
+            $("#getMoreProducts").click(() => {
+                $.get("https://localhost:5001/product/getmoreproducts", function (data) {
+                    var newData = JSON.parse(data);
+                    buildLoadMoreProductTable(newData, "productTable");
+                });
+            });
+
+            function buildLoadMoreProductTable(data, tableid) {
+                var table = $('#'+tableid);
+                for (var i = 0; i < data.length; i++) {
+                    var row = `<tr>
+                                <td>${data[i].Id}</td>
+                                <td><img src="${data[i].ThumbImg}" /></td>
+                                <td>${data[i].Name}</td>
+                                <td>${data[i].Quantity}</td>
+                               </tr>`;
+                    table.append(row);
+                }
+            }
+        </script>
+    }
+    
 </div>

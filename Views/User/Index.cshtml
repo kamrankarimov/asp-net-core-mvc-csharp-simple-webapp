@@ -8,6 +8,7 @@
     <table class="table">
         <thead>
             <tr>
+                <th scope="col">ID</th>
                 <th scope="col">First Name</th>
                 <th scope="col">Last Name</th>
                 <th scope="col">Email</th>
@@ -17,6 +18,7 @@
             @foreach(var user in Model)
             {
                 <tr>
+                    <td>@user.Id</td>
                     <td>@user.Name</td>
                     <td>@user.LastName</td>
                     <td>@user.Email</td>
