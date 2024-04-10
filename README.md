@@ -1,4 +1,4 @@
-№ Asp.Net Core (MVC), C# - Simple Web Application
+# Asp.Net Core (MVC), C# - Simple Web Application
 
 The purpose of doing this little project is to improve myself and create a history by committing each step.
 
