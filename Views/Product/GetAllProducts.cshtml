@@ -1,0 +1,31 @@
+﻿@model (List<Products> products, Users user)
+
+@{
+    ViewData["Title"] = "Product List";
+}
+
+<div class="container pt-5">
+    <div class="text-center">
+        <h3>@Model.user.Name @Model.user.LastName (#@Model.user.Id) Products</h3>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.products)
+            {
+                <tr>
+                    <td><img src="@product.ThumbImg" /></td>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Quantity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
