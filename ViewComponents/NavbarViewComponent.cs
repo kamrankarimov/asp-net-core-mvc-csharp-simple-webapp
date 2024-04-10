@@ -10,9 +10,10 @@ namespace SimpleWebApp.ViewComponents
         {
             //Demo Data 
             List<Navbar> navbar = new List<Navbar> {
-                new Navbar { Name = "Home", ControllerName = "Home", ActionName = "Index"},
-                new Navbar { Name = "Login", ControllerName = "User", ActionName = "Login"},
-                new Navbar { Name = "Register", ControllerName = "User", ActionName = "Register"}
+                new Navbar { Name = "Home", ControllerName = "home", ActionName = "index"},
+                new Navbar { Name = "User List", ControllerName = "user", ActionName = "index"},
+                new Navbar { Name = "Login", ControllerName = "user", ActionName = "login"},
+                new Navbar { Name = "Register", ControllerName = "user", ActionName = "register"}
             };
 
             return View(navbar);
