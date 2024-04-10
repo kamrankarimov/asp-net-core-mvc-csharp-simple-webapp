@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "VKlGjmyMgH1KTeOsvsIiBzyeldE2BKmspCT8eIZbYDreXD8aEvKuyta9tKaBF/HlW8wQ2Yp+qmukahc1nGwE4g==",
+  "dgSpecHash": "CMBsKDE8HmIZZzAIX/JG+jqd0wZRVbLgs7mkZj8eQjEnsG87aUsuYHXEo4D7a4G6AgqwJ7/OsFYHGXvGe1pQTQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\kamra\\source\\repos\\SimpleWebApp\\SimpleWebApp\\SimpleWebApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\kamra\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
+    "C:\\Users\\kamra\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+  ],
   "logs": []
 }
